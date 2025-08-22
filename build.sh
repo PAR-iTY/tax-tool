@@ -46,3 +46,11 @@ echo "export const prerender = true;" > ./src/routes/+layout.server.js
 
 # to build for production
 bun run build
+
+gh repo create tax-tool --source=. --public --description "NZ tax calculator tool"
+
+# to deploy build files to surge
+bun install -g surge
+
+# host demo
+# surge build
